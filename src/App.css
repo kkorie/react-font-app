@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.size {
+  height: 20px;
+  margin: 10px 50px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container .fonts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-auto-rows: minmax(240px, auto);
+  grid-gap: 40px;
+  padding: 50px;
+  width: 70%;
+  padding-top: 70px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1370px) and (min-width: 1000px){
+  .container .fonts {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-gap: 20px;
+    width: 70%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 1000px){
+  .container .fonts {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    width: 70%;
   }
+}
+.container .fonts .font {
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container .fonts .font:hover {
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+.container .fonts .font .font__title {
+  margin: 16px 16px 24px;
+}
+.container .fonts .font .font__content {
+  padding: 0 16px;
+  font-size: 40px;
+}
+.container .aside {
+  position: relative;
+  width: 330px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  border-left: 1px solid #dadce0;
+  position: fixed;
+  background-color: white;
+}
+.container .aside .aside__basic {
+}
+.container .aside .aside__basic .basic__title,
+.container .aside .aside__notselected .selected__title,
+.container .aside .aside__selected .selected__title {
+  margin: 16px;
+}
+.container .aside .aside__basic .basic__font,
+.container .aside .aside__notselected .selected__font,
+.container .aside .aside__selected .selected__font {
+  height: 100px;
+  margin: 0 16px;
+  padding: 10px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  color: #202124;
+}
+.container .aside .aside__basic .basic__font,
+.container .aside .aside__selected .selected__font {
+  font-size: 40px;
+}
+.container .aside .aside__selected .aside__use {
+  margin-top: 30px;
+  border-top: 1px solid #dadce0;
+  color: #3c4043;
+}
+.container .aside .aside__selected .aside__use div {
+  padding: 16px;
+}
+.container .aside .aside__selected .aside__use .use__useLink,
+.container .aside .aside__selected .aside__use .use__useCss {
+  background-color: #f1f3f4;
+  font-size: 14px;
 }

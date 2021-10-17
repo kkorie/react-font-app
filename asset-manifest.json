@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-font-app/static/css/main.b203143b.chunk.css",
+    "main.js": "/react-font-app/static/js/main.093768b1.chunk.js",
+    "main.js.map": "/react-font-app/static/js/main.093768b1.chunk.js.map",
+    "runtime-main.js": "/react-font-app/static/js/runtime-main.97722bd8.js",
+    "runtime-main.js.map": "/react-font-app/static/js/runtime-main.97722bd8.js.map",
+    "static/js/2.d2a263e2.chunk.js": "/react-font-app/static/js/2.d2a263e2.chunk.js",
+    "static/js/2.d2a263e2.chunk.js.map": "/react-font-app/static/js/2.d2a263e2.chunk.js.map",
+    "static/js/3.54969a5d.chunk.js": "/react-font-app/static/js/3.54969a5d.chunk.js",
+    "static/js/3.54969a5d.chunk.js.map": "/react-font-app/static/js/3.54969a5d.chunk.js.map",
+    "index.html": "/react-font-app/index.html",
+    "static/css/main.b203143b.chunk.css.map": "/react-font-app/static/css/main.b203143b.chunk.css.map",
+    "static/js/2.d2a263e2.chunk.js.LICENSE.txt": "/react-font-app/static/js/2.d2a263e2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97722bd8.js",
+    "static/js/2.d2a263e2.chunk.js",
+    "static/css/main.b203143b.chunk.css",
+    "static/js/main.093768b1.chunk.js"
+  ]
+}
